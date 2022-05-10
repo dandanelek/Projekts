@@ -11,27 +11,29 @@ namespace Projekts
         public string Name {get; set;}
         public void Izveelne()
         {
-            string caseSwitch = "${}";
+           
             switch (Name)
             {
-                case string A:
-                    Console.WriteLine("Monday");
+                case "a":
+                    Console.WriteLine("Primitīvie datu tipi");
                     break;
-                case string B:
-                    Console.WriteLine("Tuesday");
+                case "b":
+                    Console.WriteLine("Aritmētiskie operatori");
                     break;
-                case string C:
-                    Console.WriteLine("Wednesday");
+                case "c":
+                    Console.WriteLine("Relāciju operatori");
                     break;
-                case string D:
-                    Console.WriteLine("Thursday");
+                case "d":
+                    Console.WriteLine("Loģiskie operatori");
                     break;
-                case string E:
-                    Console.WriteLine("Friday");
-                    break;  
-               
+                case "e":
+                    Console.WriteLine("Piešķiršanas operatori");
+                    break;
+                default:  
+                    Console.WriteLine($"Jūs esiet izvēlējies ārpus saraksta");
+                    break;
             }  
-           // Console.WriteLine($"Jūs esiet izvēlējies ārpus saraksta");
+           Console.WriteLine($"stop");
         }
 }
 }

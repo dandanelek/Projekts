@@ -3,11 +3,11 @@ Microsoft radītas objektu orientētas programmēšanas valodas C-Sharp pamatus.
 
   Šajā sadaļā tiek apskatīti(ar paskaidrojumiem):
 
-* Primitīvie datu tipi    (Data Types)
-* Aritmētiskie operatori  (Arithmetic Operators)
-* Relāciju operatori      (Relational Operators)
-* Loģiskie operatori      (Logical Operators)
-* Piešķiršanas operatori  (Unary Operators)
+* a.Primitīvie datu tipi    (Data Types)
+* b.Aritmētiskie operatori  (Arithmetic Operators)
+* c.Relāciju operatori      (Relational Operators)
+* d.Loģiskie operatori      (Logical Operators)
+* e.Piešķiršanas operatori  (Unary Operators)
 */
 /*
 Console.WriteLine("Kā tevi sauc ?");
@@ -16,7 +16,16 @@ Console.WriteLine("Sveiks, " + userInput); */
 
 using Projekts;
 Menu menu = new Menu();
-Console.WriteLine("Izvēlies 1 2 3 4 5 ");
+Console.WriteLine("                                                   ");
+Console.WriteLine("   Šajā sadaļā tiek apskatīti(ar paskaidrojumiem):");
+Console.WriteLine("                                                   ");
+Console.WriteLine("   a.Primitīvie datu tipi    (Data Types)");
+Console.WriteLine("   b.Aritmētiskie operatori  (Arithmetic Operators)");
+Console.WriteLine("   c.Relāciju operatori      (Relational Operators)");
+Console.WriteLine("   d.Loģiskie operatori      (Logical Operators)");
+Console.WriteLine("   e.Piešķiršanas operatori  (Unary Operators)");
+Console.WriteLine("                                                   ");
+Console.WriteLine(" Izvēlieties no saraksta: a b c d vai e");
 string userInput = Console.ReadLine();
 menu.Name = userInput;
 menu.Izveelne();
